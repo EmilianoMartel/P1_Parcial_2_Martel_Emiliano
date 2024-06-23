@@ -9,8 +9,14 @@
 using namespace std;
 
 struct Vector2 {
-	int positionX;
-	int positionY;
+	int X;
+	int Y;
+	
+	bool operator<(const Vector2& other) const {
+		if (X < other.X) return true;
+		if (X > other.X) return false;
+		return Y < other.Y;
+	}
 };
 
 enum class Color

@@ -127,17 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddLife.cpp" />
     <ClCompile Include="AwesomeLibrary.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="P1_Parcial_2_Martel_Emiliano.cpp" />
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Pickable.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddLife.h" />
     <ClInclude Include="AwesomeLibrary.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Pickable.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

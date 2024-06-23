@@ -1,10 +1,11 @@
 #include <iostream>
 #include "AwesomeLibrary.h"
-#include "Character.h"
+#include "GameManager.h"
 using namespace std;
 
 int main()
 {
-	Character player = Character();
-	drawFrame(1, 1, 20, 20);
+	GameManager gameManager = GameManager("Emiliano Martel", 25, 70, 10);
+
+	gameManager.Game();
 }
