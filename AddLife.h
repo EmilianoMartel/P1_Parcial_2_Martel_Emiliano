@@ -3,6 +3,7 @@
 
 class AddLife : public Pickable {
 public:
-	void draw() override;
-	void interact() override;
+	AddLife();
+	~AddLife();
+	void interact(Player* player) override;
 };

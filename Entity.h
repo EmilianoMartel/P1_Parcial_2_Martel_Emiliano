@@ -13,7 +13,7 @@ protected:
 	
 public:
 	Entity(int positionX = 1, int positionY = 1, int width = 1, int height = 1, string view = "X", Color color = Color::WHITE);
-	~Entity();
+	virtual ~Entity();
 	virtual void setPosition(int positionX, int positionY);
 	virtual bool collisionCheck(Entity* entity);
 	virtual Vector2 getPosition();

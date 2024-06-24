@@ -25,6 +25,7 @@ void Character::move(Vector2 input) {
 }
 
 void Character::draw() {
+    setForegroundColor(color);
     vector<string> tempView = splitByNewline(view);
     goToCoordinates(position.X, position.Y);
 

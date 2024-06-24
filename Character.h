@@ -10,7 +10,7 @@ protected:
 	vector<string> splitByNewline(const string& str);
 public:
 	Character();
-	~Character();
-	void move(Vector2 input);
+	virtual ~Character();
+	virtual void move(Vector2 input);
 	void draw() override;
 };

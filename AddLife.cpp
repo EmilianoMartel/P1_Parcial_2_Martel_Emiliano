@@ -1,11 +1,14 @@
 #include "AddLife.h"
 
-void AddLife::draw() {
-	setForegroundColor(Color::GREEN);
-	goToCoordinates(position.X, position.Y);
-	cout << "view";
+AddLife::AddLife() {
+	view = "L";
+	width = 0;
+	height = 0;
+	color = Color::GREEN;
 }
 
-void AddLife::interact() {
+AddLife::~AddLife(){}
 
+void AddLife::interact(Player* player) {
+	player->changeLife(1);
 }

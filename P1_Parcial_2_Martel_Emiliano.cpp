@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	GameManager gameManager = GameManager("Emiliano Martel", 25, 70, 10);
+	GameManager gameManager = GameManager("Emiliano Martel", 25, 70, 10, 5);
 
 	gameManager.Game();
 }
