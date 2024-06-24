@@ -162,10 +162,10 @@ void GameManager::finalScene() {
 		printData(lines, 41, &indexer);
 		goToCoordinates(41, indexer);
 		input = questionWithIntReturn("Select a option: ", 41, indexer);
+		resetGame();
 		switch (input)
 		{
 		case 1:
-			resetGame();
 			gameLoop();
 			break;
 		case 2:
